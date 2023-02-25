@@ -11,6 +11,9 @@
 		FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */; };
 		FA49C14E29A9F70F00CE1867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA49C14D29A9F70F00CE1867 /* Assets.xcassets */; };
 		FA49C15129A9F70F00CE1867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA49C14F29A9F70F00CE1867 /* LaunchScreen.storyboard */; };
+		FA49C16229AA04AD00CE1867 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49C15F29AA04AD00CE1867 /* IBMPlexSans-Regular.ttf */; };
+		FA49C16329AA04AD00CE1867 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49C16029AA04AD00CE1867 /* IBMPlexSans-Medium.ttf */; };
+		FA49C16429AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49C16129AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		FA49C14D29A9F70F00CE1867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA49C15029A9F70F00CE1867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA49C15229A9F70F00CE1867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA49C15F29AA04AD00CE1867 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		FA49C16029AA04AD00CE1867 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		FA49C16129AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +77,21 @@
 		FA49C15C29A9FBFC00CE1867 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA49C15E29AA042D00CE1867 /* Fonts */,
 				FA49C14D29A9F70F00CE1867 /* Assets.xcassets */,
 				FA49C15229A9F70F00CE1867 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA49C15E29AA042D00CE1867 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA49C16029AA04AD00CE1867 /* IBMPlexSans-Medium.ttf */,
+				FA49C15F29AA04AD00CE1867 /* IBMPlexSans-Regular.ttf */,
+				FA49C16129AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA49C15129A9F70F00CE1867 /* LaunchScreen.storyboard in Resources */,
+				FA49C16229AA04AD00CE1867 /* IBMPlexSans-Regular.ttf in Resources */,
+				FA49C16429AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf in Resources */,
+				FA49C16329AA04AD00CE1867 /* IBMPlexSans-Medium.ttf in Resources */,
 				FA49C14E29A9F70F00CE1867 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
