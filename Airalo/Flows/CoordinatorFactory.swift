@@ -17,7 +17,7 @@ struct CoordinatorFactory {
     }
     
     func makeStoreFlowCoordinator() -> (UIViewController, Coordinator) {
-        let navigationController = UINavigationController()
+        let navigationController = NavigationController()
         let router = BaseRouter(rootController: navigationController)
         let coordinator = StoreFlowCoordinator(router: router, moduleFactory: .init())
         return (navigationController, coordinator)
