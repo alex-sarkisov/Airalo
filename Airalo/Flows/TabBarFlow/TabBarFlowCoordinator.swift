@@ -27,8 +27,25 @@ class TabBarFlowCoordinator: BaseCoordinator {
     private func showTabBarModule() {
         let module = moduleFactory.makeTabBarModule()
         module.submodules = [
+            startHomeFlow(),
+            startEsimsFlow(),
+            startProfileFlow()
         ]
         window.rootViewController = module.toPresent()
         window.makeKeyAndVisible()
+    }
+    
+    private func startHomeFlow() -> (Tab, UIViewController) {
+        let (controller, coordinator) = coordinatorFactory.makeStoreFlowCoordinator()
+        self.add(child: coordinator)
+        coordinator.start()
+        return (.store, controller)
+    }
+    
+    private func startEsimsFlow() -> (Tab, UIViewController) {
+        return (.eSIMs, UIViewController())
+    }
+    private func startProfileFlow() -> (Tab, UIViewController) {
+        return (.profile, UIViewController())
     }
 }

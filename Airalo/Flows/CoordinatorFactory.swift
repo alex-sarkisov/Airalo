@@ -15,4 +15,11 @@ struct CoordinatorFactory {
                                      coordinatorFactory: .init(),
                                      moduleFactory: .init())
     }
+    
+    func makeStoreFlowCoordinator() -> (UIViewController, Coordinator) {
+        let navigationController = UINavigationController()
+        let router = BaseRouter(rootController: navigationController)
+        let coordinator = StoreFlowCoordinator(router: router, moduleFactory: .init())
+        return (navigationController, coordinator)
+    }
 }

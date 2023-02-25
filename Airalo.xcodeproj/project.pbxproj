@@ -18,12 +18,17 @@
 		FA49C17229AA1F1C00CE1867 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C17129AA1F1C00CE1867 /* Fonts.swift */; };
 		FA49C17929AA261200CE1867 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C17829AA261200CE1867 /* Images.swift */; };
 		FA49C17E29AA2F0700CE1867 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C17D29AA2F0700CE1867 /* Colors.swift */; };
+		FA49C18229AA319B00CE1867 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18129AA319B00CE1867 /* StoreViewModel.swift */; };
+		FA49C18429AA31A600CE1867 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18329AA31A600CE1867 /* StoreViewController.swift */; };
+		FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18529AA31AD00CE1867 /* StoreView.swift */; };
+		FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18729AA34E300CE1867 /* StoreFlowModuleFactory.swift */; };
 		FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18B29AA37B400CE1867 /* BaseRouter.swift */; };
 		FA49C18E29AA37C800CE1867 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18D29AA37C800CE1867 /* Presentable.swift */; };
 		FA49C19029AA398900CE1867 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C18F29AA398900CE1867 /* BaseCoordinator.swift */; };
 		FA49C19429AA3EC500CE1867 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19329AA3EC500CE1867 /* CoordinatorFactory.swift */; };
 		FA49C19629AA3FE800CE1867 /* TabBarFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19529AA3FE800CE1867 /* TabBarFlowCoordinator.swift */; };
 		FA49C19829AA409C00CE1867 /* TabBarModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19729AA409C00CE1867 /* TabBarModuleFactory.swift */; };
+		FA49C19A29AA458700CE1867 /* StoreFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +45,17 @@
 		FA49C17129AA1F1C00CE1867 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FA49C17829AA261200CE1867 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		FA49C17D29AA2F0700CE1867 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FA49C18129AA319B00CE1867 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		FA49C18329AA31A600CE1867 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		FA49C18529AA31AD00CE1867 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		FA49C18729AA34E300CE1867 /* StoreFlowModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFlowModuleFactory.swift; sourceTree = "<group>"; };
 		FA49C18B29AA37B400CE1867 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		FA49C18D29AA37C800CE1867 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		FA49C18F29AA398900CE1867 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		FA49C19329AA3EC500CE1867 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		FA49C19529AA3FE800CE1867 /* TabBarFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlowCoordinator.swift; sourceTree = "<group>"; };
 		FA49C19729AA409C00CE1867 /* TabBarModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleFactory.swift; sourceTree = "<group>"; };
+		FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FA49C19329AA3EC500CE1867 /* CoordinatorFactory.swift */,
+				FA49C17F29AA312300CE1867 /* StoreFlow */,
 				FA49C16729AA18BE00CE1867 /* TabBarFlow */,
 			);
 			path = Flows;
@@ -152,6 +163,26 @@
 				FA49C17829AA261200CE1867 /* Images.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		FA49C17F29AA312300CE1867 /* StoreFlow */ = {
+			isa = PBXGroup;
+			children = (
+				FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */,
+				FA49C18729AA34E300CE1867 /* StoreFlowModuleFactory.swift */,
+				FA49C18029AA313A00CE1867 /* StoreModule */,
+			);
+			path = StoreFlow;
+			sourceTree = "<group>";
+		};
+		FA49C18029AA313A00CE1867 /* StoreModule */ = {
+			isa = PBXGroup;
+			children = (
+				FA49C18529AA31AD00CE1867 /* StoreView.swift */,
+				FA49C18329AA31A600CE1867 /* StoreViewController.swift */,
+				FA49C18129AA319B00CE1867 /* StoreViewModel.swift */,
+			);
+			path = StoreModule;
 			sourceTree = "<group>";
 		};
 		FA49C18929AA378800CE1867 /* Helpers */ = {
@@ -245,16 +276,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA49C18429AA31A600CE1867 /* StoreViewController.swift in Sources */,
 				FA49C19829AA409C00CE1867 /* TabBarModuleFactory.swift in Sources */,
 				FA49C17229AA1F1C00CE1867 /* Fonts.swift in Sources */,
 				FA49C19029AA398900CE1867 /* BaseCoordinator.swift in Sources */,
+				FA49C19A29AA458700CE1867 /* StoreFlowCoordinator.swift in Sources */,
+				FA49C18229AA319B00CE1867 /* StoreViewModel.swift in Sources */,
 				FA49C17E29AA2F0700CE1867 /* Colors.swift in Sources */,
 				FA49C16929AA18D400CE1867 /* TabBarController.swift in Sources */,
 				FA49C18E29AA37C800CE1867 /* Presentable.swift in Sources */,
 				FA49C17929AA261200CE1867 /* Images.swift in Sources */,
 				FA49C19429AA3EC500CE1867 /* CoordinatorFactory.swift in Sources */,
+				FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */,
 				FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
+				FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */,
 				FA49C19629AA3FE800CE1867 /* TabBarFlowCoordinator.swift in Sources */,
 				FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */,
 			);
