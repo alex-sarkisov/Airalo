@@ -14,6 +14,7 @@
 		FA49C16229AA04AD00CE1867 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49C15F29AA04AD00CE1867 /* IBMPlexSans-Regular.ttf */; };
 		FA49C16329AA04AD00CE1867 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49C16029AA04AD00CE1867 /* IBMPlexSans-Medium.ttf */; };
 		FA49C16429AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49C16129AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf */; };
+		FA49C17229AA1F1C00CE1867 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C17129AA1F1C00CE1867 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA49C15F29AA04AD00CE1867 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
 		FA49C16029AA04AD00CE1867 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
 		FA49C16129AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA49C17129AA1F1C00CE1867 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FA49C14329A9F70B00CE1867 /* Airalo */ = {
 			isa = PBXGroup;
 			children = (
+				FA49C17029AA1F0C00CE1867 /* Styles */,
 				FA49C15B29A9FBE000CE1867 /* Application */,
 				FA49C15C29A9FBFC00CE1867 /* Resources */,
 			);
@@ -92,6 +95,14 @@
 				FA49C16129AA04AD00CE1867 /* IBMPlexSans-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA49C17029AA1F0C00CE1867 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FA49C17129AA1F1C00CE1867 /* Fonts.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA49C17229AA1F1C00CE1867 /* Fonts.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
 				FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */,
 			);
