@@ -52,13 +52,29 @@
 		FA49C14329A9F70B00CE1867 /* Airalo */ = {
 			isa = PBXGroup;
 			children = (
-				FA49C14429A9F70B00CE1867 /* AppDelegate.swift */,
-				FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */,
-				FA49C14D29A9F70F00CE1867 /* Assets.xcassets */,
-				FA49C14F29A9F70F00CE1867 /* LaunchScreen.storyboard */,
-				FA49C15229A9F70F00CE1867 /* Info.plist */,
+				FA49C15B29A9FBE000CE1867 /* Application */,
+				FA49C15C29A9FBFC00CE1867 /* Resources */,
 			);
 			path = Airalo;
+			sourceTree = "<group>";
+		};
+		FA49C15B29A9FBE000CE1867 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA49C14429A9F70B00CE1867 /* AppDelegate.swift */,
+				FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */,
+				FA49C14F29A9F70F00CE1867 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FA49C15C29A9FBFC00CE1867 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA49C14D29A9F70F00CE1867 /* Assets.xcassets */,
+				FA49C15229A9F70F00CE1867 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +288,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YY84LV8D84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Airalo/Info.plist;
+				INFOPLIST_FILE = Airalo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -298,7 +314,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YY84LV8D84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Airalo/Info.plist;
+				INFOPLIST_FILE = Airalo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
