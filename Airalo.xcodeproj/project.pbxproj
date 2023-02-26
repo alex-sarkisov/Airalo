@@ -30,6 +30,8 @@
 		FA49C19829AA409C00CE1867 /* TabBarModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19729AA409C00CE1867 /* TabBarModuleFactory.swift */; };
 		FA49C19A29AA458700CE1867 /* StoreFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */; };
 		FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19E29AABF5200CE1867 /* NavigationController.swift */; };
+		FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F157F29AB580E005083A1 /* NetworkClient.swift */; };
+		FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		FA49C19729AA409C00CE1867 /* TabBarModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleFactory.swift; sourceTree = "<group>"; };
 		FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFlowCoordinator.swift; sourceTree = "<group>"; };
 		FA49C19E29AABF5200CE1867 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FA5F157F29AB580E005083A1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				FA49C16629AA18B600CE1867 /* Flows */,
 				FA49C18929AA378800CE1867 /* Helpers */,
 				FA49C15C29A9FBFC00CE1867 /* Resources */,
+				FA5F157B29AB57D8005083A1 /* Services */,
 				FA49C17029AA1F0C00CE1867 /* Styles */,
 			);
 			path = Airalo;
@@ -214,6 +219,23 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		FA5F157B29AB57D8005083A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F157E29AB57F8005083A1 /* NetworkClient */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA5F157E29AB57F8005083A1 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F157F29AB580E005083A1 /* NetworkClient.swift */,
+				FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,9 +320,11 @@
 				FA49C18E29AA37C800CE1867 /* Presentable.swift in Sources */,
 				FA49C17929AA261200CE1867 /* Images.swift in Sources */,
 				FA49C19429AA3EC500CE1867 /* CoordinatorFactory.swift in Sources */,
+				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
 				FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */,
 				FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */,
 				FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */,
+				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
 				FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */,
 				FA49C19629AA3FE800CE1867 /* TabBarFlowCoordinator.swift in Sources */,
