@@ -33,6 +33,8 @@
 		FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F157C29AB57F4005083A1 /* ServiceFactory.swift */; };
 		FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F157F29AB580E005083A1 /* NetworkClient.swift */; };
 		FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */; };
+		FA5F159329AB63C9005083A1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159229AB63C9005083A1 /* Country.swift */; };
+		FA5F159529AB6441005083A1 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159429AB6441005083A1 /* ImageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		FA5F157C29AB57F4005083A1 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		FA5F157F29AB580E005083A1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
+		FA5F159229AB63C9005083A1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		FA5F159429AB6441005083A1 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				FA49C19D29AABF4000CE1867 /* Common */,
 				FA49C16629AA18B600CE1867 /* Flows */,
 				FA49C18929AA378800CE1867 /* Helpers */,
+				FA5F159129AB63B4005083A1 /* Models */,
 				FA49C15C29A9FBFC00CE1867 /* Resources */,
 				FA5F157B29AB57D8005083A1 /* Services */,
 				FA49C17029AA1F0C00CE1867 /* Styles */,
@@ -239,6 +244,15 @@
 			path = NetworkClient;
 			sourceTree = "<group>";
 		};
+		FA5F159129AB63B4005083A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F159229AB63C9005083A1 /* Country.swift */,
+				FA5F159429AB6441005083A1 /* ImageData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +335,7 @@
 				FA49C17E29AA2F0700CE1867 /* Colors.swift in Sources */,
 				FA49C16929AA18D400CE1867 /* TabBarController.swift in Sources */,
 				FA49C18E29AA37C800CE1867 /* Presentable.swift in Sources */,
+				FA5F159329AB63C9005083A1 /* Country.swift in Sources */,
 				FA49C17929AA261200CE1867 /* Images.swift in Sources */,
 				FA49C19429AA3EC500CE1867 /* CoordinatorFactory.swift in Sources */,
 				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
@@ -333,6 +348,7 @@
 				FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */,
 				FA49C19629AA3FE800CE1867 /* TabBarFlowCoordinator.swift in Sources */,
 				FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */,
+				FA5F159529AB6441005083A1 /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
