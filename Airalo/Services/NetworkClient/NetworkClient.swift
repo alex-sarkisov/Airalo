@@ -12,7 +12,7 @@ protocol NetworkClient {
     func request(_ url: String) async throws -> Data
 }
 
-class NetworkClientImp: NetworkClient {
+struct NetworkClientImp: NetworkClient {
     
     private let session = URLSession.shared
     
