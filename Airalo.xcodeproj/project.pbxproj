@@ -38,6 +38,9 @@
 		FA5F159529AB6441005083A1 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159429AB6441005083A1 /* ImageData.swift */; };
 		FA5F159729AB6AE9005083A1 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159629AB6AE9005083A1 /* Region.swift */; };
 		FA5F159A29AB6B13005083A1 /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159929AB6B13005083A1 /* RegionService.swift */; };
+		FA5F159C29AB6D9A005083A1 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159B29AB6D9A005083A1 /* Package.swift */; };
+		FA5F159E29AB6EE9005083A1 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159D29AB6EE9005083A1 /* Operator.swift */; };
+		FA5F15A029AB70D2005083A1 /* OperatorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159F29AB70D2005083A1 /* OperatorStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		FA5F159429AB6441005083A1 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		FA5F159629AB6AE9005083A1 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		FA5F159929AB6B13005083A1 /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
+		FA5F159B29AB6D9A005083A1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		FA5F159D29AB6EE9005083A1 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		FA5F159F29AB70D2005083A1 /* OperatorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +271,9 @@
 			children = (
 				FA5F159229AB63C9005083A1 /* Country.swift */,
 				FA5F159429AB6441005083A1 /* ImageData.swift */,
+				FA5F159D29AB6EE9005083A1 /* Operator.swift */,
+				FA5F159F29AB70D2005083A1 /* OperatorStyle.swift */,
+				FA5F159B29AB6D9A005083A1 /* Package.swift */,
 				FA5F159629AB6AE9005083A1 /* Region.swift */,
 			);
 			path = Models;
@@ -355,6 +364,7 @@
 				FA5F159A29AB6B13005083A1 /* RegionService.swift in Sources */,
 				FA49C19829AA409C00CE1867 /* TabBarModuleFactory.swift in Sources */,
 				FA49C17229AA1F1C00CE1867 /* Fonts.swift in Sources */,
+				FA5F15A029AB70D2005083A1 /* OperatorStyle.swift in Sources */,
 				FA49C19029AA398900CE1867 /* BaseCoordinator.swift in Sources */,
 				FA49C19A29AA458700CE1867 /* StoreFlowCoordinator.swift in Sources */,
 				FA49C18229AA319B00CE1867 /* StoreViewModel.swift in Sources */,
@@ -372,9 +382,11 @@
 				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
 				FA5F159729AB6AE9005083A1 /* Region.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
+				FA5F159C29AB6D9A005083A1 /* Package.swift in Sources */,
 				FA5F159029AB631F005083A1 /* CountryService.swift in Sources */,
 				FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */,
 				FA49C19629AA3FE800CE1867 /* TabBarFlowCoordinator.swift in Sources */,
+				FA5F159E29AB6EE9005083A1 /* Operator.swift in Sources */,
 				FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */,
 				FA5F159529AB6441005083A1 /* ImageData.swift in Sources */,
 			);

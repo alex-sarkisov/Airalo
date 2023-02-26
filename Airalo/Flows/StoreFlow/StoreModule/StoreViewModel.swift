@@ -27,6 +27,7 @@ class StoreViewModelImp: StoreViewModel {
             do {
                 let countries = try await countryService.obtainPopularCountries()
                 let regions = try await regionService.obtainRegions()
+                let globalPackages = try await regionService.obtainGlobalPackages()
             } catch {
                 print(error)
             }

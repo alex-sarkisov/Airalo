@@ -13,4 +13,5 @@ struct Region: Decodable {
     let slug: String
     let title: String
     let image: ImageData
+    let packages: [Package]?
 }
