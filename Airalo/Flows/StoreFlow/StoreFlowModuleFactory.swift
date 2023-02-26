@@ -11,7 +11,8 @@ struct StoreFlowModuleFactory {
     
     func makeStoreModule() -> UIViewController {
         let countryService = ServiceFactory.countryService()
-        let viewModel = StoreViewModelImp(countryService: countryService)
+        let regionService = ServiceFactory.regionService()
+        let viewModel = StoreViewModelImp(countryService: countryService, regionService: regionService)
         let controller = StoreViewController(viewModel: viewModel)
         return controller
     }

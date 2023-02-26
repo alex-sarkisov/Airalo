@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B60B2214-3435-479A-A891-4BD25C19938B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3386603F-578F-49A1-B6DA-D22CF70E4676"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airalo/Flows/StoreFlow/StoreModule/StoreViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "obtainData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3386603F-578F-49A1-B6DA-D22CF70E4676 - a42f0411e5c50ae3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Airalo.StoreViewModelImp.obtainData() -&gt; ()"
+                  moduleName = "Airalo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Git/Airalo/Airalo/Flows/StoreFlow/StoreModule/StoreViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "3386603F-578F-49A1-B6DA-D22CF70E4676 - 4156508b34f1ecec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Airalo.StoreViewModelImp.obtainData() -&gt; ()"
+                  moduleName = "Airalo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Git/Airalo/Airalo/Flows/StoreFlow/StoreModule/StoreViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

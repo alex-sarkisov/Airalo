@@ -14,9 +14,11 @@ protocol StoreViewModel {
 class StoreViewModelImp: StoreViewModel {
     
     private let countryService: CountryService
+    private let regionService: RegionService
     
-    init(countryService: CountryService) {
+    init(countryService: CountryService, regionService: RegionService) {
         self.countryService = countryService
+        self.regionService = regionService
         obtainData()
     }
     
@@ -24,6 +26,7 @@ class StoreViewModelImp: StoreViewModel {
         Task {
             do {
                 let countries = try await countryService.obtainPopularCountries()
+                let regions = try await regionService.obtainRegions()
             } catch {
                 print(error)
             }

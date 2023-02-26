@@ -36,6 +36,8 @@
 		FA5F159029AB631F005083A1 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F158F29AB631F005083A1 /* CountryService.swift */; };
 		FA5F159329AB63C9005083A1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159229AB63C9005083A1 /* Country.swift */; };
 		FA5F159529AB6441005083A1 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159429AB6441005083A1 /* ImageData.swift */; };
+		FA5F159729AB6AE9005083A1 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159629AB6AE9005083A1 /* Region.swift */; };
+		FA5F159A29AB6B13005083A1 /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159929AB6B13005083A1 /* RegionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		FA5F158F29AB631F005083A1 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
 		FA5F159229AB63C9005083A1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		FA5F159429AB6441005083A1 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		FA5F159629AB6AE9005083A1 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		FA5F159929AB6B13005083A1 /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,8 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				FA5F157C29AB57F4005083A1 /* ServiceFactory.swift */,
-				FA5F158E29AB62DE005083A1 /* CountryService */,
 				FA5F157E29AB57F8005083A1 /* NetworkClient */,
+				FA5F158E29AB62DE005083A1 /* CountryService */,
+				FA5F159829AB6B01005083A1 /* RegionService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -260,8 +265,17 @@
 			children = (
 				FA5F159229AB63C9005083A1 /* Country.swift */,
 				FA5F159429AB6441005083A1 /* ImageData.swift */,
+				FA5F159629AB6AE9005083A1 /* Region.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA5F159829AB6B01005083A1 /* RegionService */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F159929AB6B13005083A1 /* RegionService.swift */,
+			);
+			path = RegionService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA49C18429AA31A600CE1867 /* StoreViewController.swift in Sources */,
+				FA5F159A29AB6B13005083A1 /* RegionService.swift in Sources */,
 				FA49C19829AA409C00CE1867 /* TabBarModuleFactory.swift in Sources */,
 				FA49C17229AA1F1C00CE1867 /* Fonts.swift in Sources */,
 				FA49C19029AA398900CE1867 /* BaseCoordinator.swift in Sources */,
@@ -355,6 +370,7 @@
 				FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */,
 				FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */,
 				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
+				FA5F159729AB6AE9005083A1 /* Region.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
 				FA5F159029AB631F005083A1 /* CountryService.swift in Sources */,
 				FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */,

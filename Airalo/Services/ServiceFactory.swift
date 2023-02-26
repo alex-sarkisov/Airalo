@@ -16,4 +16,8 @@ struct ServiceFactory {
     static func countryService() -> CountryService {
         return CountryServiceImp(networkClient: networkClient())
     }
+    
+    static func regionService() -> RegionService {
+        return RegionServiceImp(networkClient: networkClient())
+    }
 }
