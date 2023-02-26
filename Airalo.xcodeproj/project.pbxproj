@@ -30,6 +30,7 @@
 		FA49C19829AA409C00CE1867 /* TabBarModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19729AA409C00CE1867 /* TabBarModuleFactory.swift */; };
 		FA49C19A29AA458700CE1867 /* StoreFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */; };
 		FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C19E29AABF5200CE1867 /* NavigationController.swift */; };
+		FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F157C29AB57F4005083A1 /* ServiceFactory.swift */; };
 		FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F157F29AB580E005083A1 /* NetworkClient.swift */; };
 		FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		FA49C19729AA409C00CE1867 /* TabBarModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleFactory.swift; sourceTree = "<group>"; };
 		FA49C19929AA458700CE1867 /* StoreFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreFlowCoordinator.swift; sourceTree = "<group>"; };
 		FA49C19E29AABF5200CE1867 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FA5F157C29AB57F4005083A1 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		FA5F157F29AB580E005083A1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +224,7 @@
 		FA5F157B29AB57D8005083A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F157C29AB57F4005083A1 /* ServiceFactory.swift */,
 				FA5F157E29AB57F8005083A1 /* NetworkClient */,
 			);
 			path = Services;
@@ -323,6 +326,7 @@
 				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
 				FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */,
 				FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */,
+				FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */,
 				FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */,
 				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
