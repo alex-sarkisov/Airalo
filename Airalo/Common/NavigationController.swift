@@ -19,6 +19,7 @@ class NavigationController: UINavigationController {
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithOpaqueBackground()
         navigationBarAppearance.backgroundColor = .background1
+        navigationBarAppearance.shadowColor = .clear
         navigationBarAppearance.largeTitleTextAttributes = [
             .font: UIFont.semiBold(size: 27),
             .foregroundColor: UIColor.content1,
