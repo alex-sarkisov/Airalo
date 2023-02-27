@@ -38,9 +38,7 @@
 		FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F157F29AB580E005083A1 /* NetworkClient.swift */; };
 		FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */; };
 		FA5F159029AB631F005083A1 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F158F29AB631F005083A1 /* CountryService.swift */; };
-		FA5F159329AB63C9005083A1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159229AB63C9005083A1 /* Country.swift */; };
 		FA5F159529AB6441005083A1 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159429AB6441005083A1 /* ImageData.swift */; };
-		FA5F159729AB6AE9005083A1 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159629AB6AE9005083A1 /* Region.swift */; };
 		FA5F159A29AB6B13005083A1 /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159929AB6B13005083A1 /* RegionService.swift */; };
 		FA5F159C29AB6D9A005083A1 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159B29AB6D9A005083A1 /* Package.swift */; };
 		FA5F159E29AB6EE9005083A1 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F159D29AB6EE9005083A1 /* Operator.swift */; };
@@ -81,9 +79,7 @@
 		FA5F157F29AB580E005083A1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		FA5F158C29AB5D04005083A1 /* NetworkClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
 		FA5F158F29AB631F005083A1 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
-		FA5F159229AB63C9005083A1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		FA5F159429AB6441005083A1 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
-		FA5F159629AB6AE9005083A1 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		FA5F159929AB6B13005083A1 /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
 		FA5F159B29AB6D9A005083A1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		FA5F159D29AB6EE9005083A1 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
@@ -304,13 +300,11 @@
 		FA5F159129AB63B4005083A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FA5F159229AB63C9005083A1 /* Country.swift */,
 				FA1BB8B029ACF3810057C7A4 /* Area.swift */,
 				FA5F159429AB6441005083A1 /* ImageData.swift */,
 				FA5F159D29AB6EE9005083A1 /* Operator.swift */,
 				FA5F159F29AB70D2005083A1 /* OperatorStyle.swift */,
 				FA5F159B29AB6D9A005083A1 /* Package.swift */,
-				FA5F159629AB6AE9005083A1 /* Region.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -408,7 +402,6 @@
 				FA49C16929AA18D400CE1867 /* TabBarController.swift in Sources */,
 				FA1BB8AC29AC10D70057C7A4 /* UIViewController+Parent.swift in Sources */,
 				FA49C18E29AA37C800CE1867 /* Presentable.swift in Sources */,
-				FA5F159329AB63C9005083A1 /* Country.swift in Sources */,
 				FA49C17929AA261200CE1867 /* Images.swift in Sources */,
 				FA49C19429AA3EC500CE1867 /* CoordinatorFactory.swift in Sources */,
 				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
@@ -418,7 +411,6 @@
 				FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */,
 				FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */,
 				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
-				FA5F159729AB6AE9005083A1 /* Region.swift in Sources */,
 				FA1BB8A029AC0D5F0057C7A4 /* AreaRowModel.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
 				FA5F159C29AB6D9A005083A1 /* Package.swift in Sources */,
