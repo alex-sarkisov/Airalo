@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1BB89E29AC0D460057C7A4 /* AreaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB89D29AC0D460057C7A4 /* AreaRow.swift */; };
+		FA1BB8A029AC0D5F0057C7A4 /* AreaRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */; };
 		FA1BB8AC29AC10D70057C7A4 /* UIViewController+Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */; };
 		FA1BB8B129ACF3810057C7A4 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB8B029ACF3810057C7A4 /* Area.swift */; };
 		FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14429A9F70B00CE1867 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1BB89D29AC0D460057C7A4 /* AreaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaRow.swift; sourceTree = "<group>"; };
+		FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaRowModel.swift; sourceTree = "<group>"; };
 		FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Parent.swift"; sourceTree = "<group>"; };
 		FA1BB8B029ACF3810057C7A4 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		FA49C14129A9F70B00CE1867 /* Airalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1BB89B29AC0CA10057C7A4 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				FA1BB89C29AC0CAA0057C7A4 /* AreaRow */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		FA1BB89C29AC0CAA0057C7A4 /* AreaRow */ = {
+			isa = PBXGroup;
+			children = (
+				FA1BB89D29AC0D460057C7A4 /* AreaRow.swift */,
+				FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */,
+			);
+			path = AreaRow;
+			sourceTree = "<group>";
+		};
 		FA1BB8AA29AC10BC0057C7A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +242,7 @@
 				FA49C18529AA31AD00CE1867 /* StoreView.swift */,
 				FA49C18329AA31A600CE1867 /* StoreViewController.swift */,
 				FA49C18129AA319B00CE1867 /* StoreViewModel.swift */,
+				FA1BB89B29AC0CA10057C7A4 /* Rows */,
 			);
 			path = StoreModule;
 			sourceTree = "<group>";
@@ -392,10 +414,12 @@
 				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
 				FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */,
 				FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */,
+				FA1BB89E29AC0D460057C7A4 /* AreaRow.swift in Sources */,
 				FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */,
 				FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */,
 				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
 				FA5F159729AB6AE9005083A1 /* Region.swift in Sources */,
+				FA1BB8A029AC0D5F0057C7A4 /* AreaRowModel.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
 				FA5F159C29AB6D9A005083A1 /* Package.swift in Sources */,
 				FA5F159029AB631F005083A1 /* CountryService.swift in Sources */,
