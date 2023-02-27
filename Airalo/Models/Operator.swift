@@ -15,7 +15,7 @@ struct Operator: Decodable {
     let gradientStart: String
     let gradientEnd: String
     let image: ImageData
-    let countries: [Country]
+    let countries: [Area]
     
     enum CodingKeys: String, CodingKey {
         case id
