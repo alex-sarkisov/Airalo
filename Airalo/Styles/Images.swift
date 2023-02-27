@@ -9,6 +9,10 @@ import Foundation
 
 enum Images {
     
+    enum Common {
+        static let arrowRight = "Common/arrowRight"
+    }
+    
     enum TabBar {
         static let eSIMs = "TabBar/eSIMs"
         static let profile = "TabBar/profile"
