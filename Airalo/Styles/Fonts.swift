@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 private enum FontStyle {
     case medium
@@ -37,5 +38,24 @@ extension UIFont {
     
     private static func font(style: FontStyle, size: CGFloat) -> UIFont {
         return UIFont(name: style.fontName, size: size)!
+    }
+}
+
+extension Font {
+    
+    static func medium(size: CGFloat) -> Font {
+        return font(style: .medium, size: size)
+    }
+    
+    static func regular(size: CGFloat) -> Font {
+        return font(style: .regular, size: size)
+    }
+    
+    static func semiBold(size: CGFloat) -> Font {
+        return font(style: .semiBold, size: size)
+    }
+    
+    private static func font(style: FontStyle, size: CGFloat) -> Font {
+        return .custom(style.fontName, size: size)
     }
 }
