@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import SwiftUI
 
-class StoreViewController: UIViewController {
+class StoreViewController: UIViewController, ParentViewController {
     
     // MARK: - Private properties
     
-    private let mainView = StoreView()
     private let viewModel: StoreViewModel
     
     // MARK: - Lifecycle
@@ -23,10 +23,6 @@ class StoreViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func loadView() {
-        view = mainView
     }
     
     override func viewDidLoad() {
@@ -42,9 +38,11 @@ class StoreViewController: UIViewController {
     // MARK: - Private functions
     
     private func initialSetup() {
+        edgesForExtendedLayout = .top
         extendedLayoutIncludesOpaqueBars = true
         setupNavigationBar()
         setupSearchBar()
+        setupView()
     }
     
     private func setupNavigationBar() {
@@ -65,5 +63,11 @@ class StoreViewController: UIViewController {
         ]
         let appearance = UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self])
         appearance.setTitleTextAttributes(attributes, for: .normal)
+    }
+    
+    private func setupView() {
+        let rootView = StoreView(viewModel: viewModel)
+        let hostingController = UIHostingController(rootView: rootView)
+        addChild(hostingController, to: view)
     }
 }
