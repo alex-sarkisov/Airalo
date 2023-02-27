@@ -9,8 +9,8 @@ import Foundation
 
 protocol RegionService {
     
-    func obtainRegions() async throws -> [Region]
-    func obtainGlobalPackages() async throws -> Region
+    func obtainRegions() async throws -> [Area]
+    func obtainGlobalPackages() async throws -> Area
 }
 
 struct RegionServiceImp: RegionService {
@@ -19,15 +19,15 @@ struct RegionServiceImp: RegionService {
     
     private let decoder = JSONDecoder()
     
-    func obtainRegions() async throws -> [Region] {
+    func obtainRegions() async throws -> [Area] {
         let data = try await networkClient.request(URLs.regions)
-        let regions = try decoder.decode([Region].self, from: data)
+        let regions = try decoder.decode([Area].self, from: data)
         return regions
     }
     
-    func obtainGlobalPackages() async throws -> Region {
+    func obtainGlobalPackages() async throws -> Area {
         let data = try await networkClient.request(URLs.globalPackages)
-        let region = try decoder.decode(Region.self, from: data)
+        let region = try decoder.decode(Area.self, from: data)
         return region
     }
 }

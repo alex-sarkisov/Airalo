@@ -9,7 +9,7 @@ import Foundation
 
 protocol CountryService {
     
-    func obtainPopularCountries() async throws -> [Country]
+    func obtainPopularCountries() async throws -> [Area]
 }
 
 struct CountryServiceImp: CountryService {
@@ -18,9 +18,9 @@ struct CountryServiceImp: CountryService {
     
     private let decoder = JSONDecoder()
     
-    func obtainPopularCountries() async throws -> [Country] {
+    func obtainPopularCountries() async throws -> [Area] {
         let data = try await networkClient.request(URLs.popularCountries)
-        let countries = try decoder.decode([Country].self, from: data)
+        let countries = try decoder.decode([Area].self, from: data)
         return countries
     }
 }
