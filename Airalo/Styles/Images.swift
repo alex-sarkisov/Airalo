@@ -11,6 +11,13 @@ enum Images {
     
     enum Common {
         static let arrowRight = "Common/arrowRight"
+        static let back = "Common/back"
+    }
+    
+    enum Package {
+        static let arrow = "Package/arrow"
+        static let data = "Package/data"
+        static let validity = "Package/validity"
     }
     
     enum TabBar {
