@@ -10,7 +10,7 @@ import Foundation
 struct Package: Decodable {
     
     let id: Int
-    let price: Int
+    let price: Double
     let title: String
     let data: String
     let validity: String
