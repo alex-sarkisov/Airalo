@@ -7,41 +7,63 @@
 
 import Foundation
 
-class StoreViewModel: ObservableObject {
+protocol StoreModule: AnyObject {
+    
+    var onTapCountry: ((Country) -> Void)? { get set }
+    var onTapRegion: ((Region) -> Void)? { get set }
+}
+
+class StoreViewModel: StoreModule, ObservableObject {
+    
+    // MARK: - Public properties
     
     @Published var isLoading: Bool = true
     @Published var selectedTab: StoreTab = .local
     @Published var localRowModels: [AreaRowModel] = []
     @Published var regionalRowModels: [AreaRowModel] = []
+    @Published var globalRowModels: [PackageRowModel] = []
+    
+    // MARK: - StoreModule properties
+    
+    var onTapCountry: ((Country) -> Void)?
+    var onTapRegion: ((Region) -> Void)?
+    
+    // MARK: - Private properties
     
     private let countryService: CountryService
     private let regionService: RegionService
+    
+    // MARK: - Public functions
     
     init(countryService: CountryService, regionService: RegionService) {
         self.countryService = countryService
         self.regionService = regionService
         obtainData()
     }
-    
+
     func onTapLocalArea(_ rowModel: AreaRowModel) {
-        
+        onTapCountry?(rowModel.area)
     }
     
     func onTapRegionalArea(_ rowModel: AreaRowModel) {
-        
+        onTapRegion?(rowModel.area)
     }
+    
+    // MARK: - Private functions
     
     private func obtainData() {
         Task {
             do {
                 let countries = try await countryService.obtainPopularCountries()
-                localRowModels = countries.map { .init(area: $0) }
-                
                 let regions = try await regionService.obtainRegions()
-                regionalRowModels = regions.map { .init(area: $0) }
-                
                 let globalPackages = try await regionService.obtainGlobalPackages()
-                isLoading = false
+                
+                await MainActor.run {
+                    localRowModels = countries.map { .init(area: $0) }
+                    regionalRowModels = regions.map { .init(area: $0) }
+                    globalRowModels = globalPackages.packages?.map { .init(package: $0) } ?? []
+                    isLoading = false
+                }
             } catch {
                 isLoading = false
                 print(error)

@@ -20,11 +20,17 @@ class NavigationController: UINavigationController {
         navigationBarAppearance.configureWithOpaqueBackground()
         navigationBarAppearance.backgroundColor = .background1
         navigationBarAppearance.shadowColor = .clear
+        navigationBarAppearance.titleTextAttributes = [
+            .font: UIFont.medium(size: 15),
+            .foregroundColor: UIColor.content1
+        ]
         navigationBarAppearance.largeTitleTextAttributes = [
             .font: UIFont.semiBold(size: 27),
             .foregroundColor: UIColor.content1,
             .kern: -0.5,
         ]
+        let backImage = UIImage(named: Images.Common.back)
+        navigationBarAppearance.setBackIndicatorImage(backImage, transitionMaskImage: backImage)
         navigationBar.standardAppearance = navigationBarAppearance
         navigationBar.scrollEdgeAppearance = navigationBarAppearance
         navigationBar.barTintColor = .background1
