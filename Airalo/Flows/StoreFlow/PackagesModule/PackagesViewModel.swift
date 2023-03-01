@@ -9,16 +9,22 @@ import Foundation
 
 class PackagesViewModel: ObservableObject {
     
+    // MARK: - Public properties
+    
     let navigationTitle: String
     
     @Published var isLoading: Bool = true
     @Published var packageRowModels: [PackageRowModel] = []
     @Published var alert: AlertDetails?
     
+    // MARK: - Private propertiess
+    
     private let area: Area
     private let areaType: AreaType
     private let countryService: CountryService
     private let regionService: RegionService
+    
+    // MARK: - Public functions
     
     init(area: Area, areaType: AreaType, countryService: CountryService, regionService: RegionService) {
         self.area = area
@@ -28,6 +34,8 @@ class PackagesViewModel: ObservableObject {
         self.navigationTitle = area.title
         obtainData()
     }
+    
+    // MARK: - Private functions
     
     private func obtainData() {
         Task {
