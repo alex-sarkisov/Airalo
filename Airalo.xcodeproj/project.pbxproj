@@ -11,6 +11,7 @@
 		FA1BB8A029AC0D5F0057C7A4 /* AreaRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */; };
 		FA1BB8AC29AC10D70057C7A4 /* UIViewController+Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */; };
 		FA1BB8B129ACF3810057C7A4 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB8B029ACF3810057C7A4 /* Area.swift */; };
+		FA1C32E029AE33B100C95D69 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32DF29AE33B100C95D69 /* Color+Hex.swift */; };
 		FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14429A9F70B00CE1867 /* AppDelegate.swift */; };
 		FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */; };
 		FA49C14E29A9F70F00CE1867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA49C14D29A9F70F00CE1867 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaRowModel.swift; sourceTree = "<group>"; };
 		FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Parent.swift"; sourceTree = "<group>"; };
 		FA1BB8B029ACF3810057C7A4 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		FA1C32DF29AE33B100C95D69 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		FA49C14129A9F70B00CE1867 /* Airalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA49C14429A9F70B00CE1867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		FA1BB8AA29AC10BC0057C7A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FA1C32DF29AE33B100C95D69 /* Color+Hex.swift */,
 				FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */,
 			);
 			path = Extensions;
@@ -397,6 +400,7 @@
 				FA5F15A029AB70D2005083A1 /* OperatorStyle.swift in Sources */,
 				FA49C19029AA398900CE1867 /* BaseCoordinator.swift in Sources */,
 				FA49C19A29AA458700CE1867 /* StoreFlowCoordinator.swift in Sources */,
+				FA1C32E029AE33B100C95D69 /* Color+Hex.swift in Sources */,
 				FA49C18229AA319B00CE1867 /* StoreViewModel.swift in Sources */,
 				FA49C17E29AA2F0700CE1867 /* Colors.swift in Sources */,
 				FA49C16929AA18D400CE1867 /* TabBarController.swift in Sources */,
