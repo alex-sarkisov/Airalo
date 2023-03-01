@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Country = Area
+
 struct Area: Decodable {
     
     let id: Int
