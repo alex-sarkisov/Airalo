@@ -23,7 +23,18 @@ class StoreFlowCoordinator: BaseCoordinator {
     }
     
     private func showStoreModule() {
-        let module = moduleFactory.makeStoreModule()
-        router.setRootModule(module)
+        let (presentable, module) = moduleFactory.makeStoreModule()
+        module.onTapCountry = { [weak self] country in
+            self?.showPackagesModule(area: country, areaType: .country)
+        }
+        module.onTapRegion = { [weak self] region in
+            self?.showPackagesModule(area: region, areaType: .region)
+        }
+        router.setRootModule(presentable)
+    }
+    
+    private func showPackagesModule(area: Area, areaType: AreaType) {
+        let module = moduleFactory.makePackagesModule(area: area, areaType: areaType)
+        router.push(module)
     }
 }
