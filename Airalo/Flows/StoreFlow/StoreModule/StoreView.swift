@@ -19,17 +19,21 @@ struct StoreView: View {
                 OffsetReader()
                 SegmentedControl(selectedTab: $viewModel.selectedTab)
                 Group {
-                    switch viewModel.selectedTab {
-                    case .local:
-                        AreasView(title: "Popular Countries",
-                                  rowModels: viewModel.localRowModels,
-                                  onTapArea: viewModel.onTapLocalArea)
-                    case .regional:
-                        AreasView(title: "Regions",
-                                  rowModels: viewModel.regionalRowModels,
-                                  onTapArea: viewModel.onTapRegionalArea)
-                    case .global:
-                        GlobalPackagesView(rowModels: viewModel.globalRowModels)
+                    if viewModel.isLoading {
+                        ProgressView()
+                    } else {
+                        switch viewModel.selectedTab {
+                        case .local:
+                            AreasView(title: "Popular Countries",
+                                      rowModels: viewModel.localRowModels,
+                                      onTapArea: viewModel.onTapLocalArea)
+                        case .regional:
+                            AreasView(title: "Regions",
+                                      rowModels: viewModel.regionalRowModels,
+                                      onTapArea: viewModel.onTapRegionalArea)
+                        case .global:
+                            GlobalPackagesView(rowModels: viewModel.globalRowModels)
+                        }
                     }
                 }
                 .padding(.horizontal, 20)
