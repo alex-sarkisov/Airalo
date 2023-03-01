@@ -15,6 +15,8 @@ class StoreViewController: UIViewController, ParentViewController {
     private let loginView = LoginNavigationView()
     private let viewModel: StoreViewModel
     
+    private var offset: CGFloat = 0
+    
     // MARK: - Lifecycle
     
     init(viewModel: StoreViewModel) {
@@ -29,6 +31,11 @@ class StoreViewController: UIViewController, ParentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigationBarWithOffset(offset)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -79,5 +86,6 @@ class StoreViewController: UIViewController, ParentViewController {
         let shadowOpacity: Float = offset < -45 ? min(-Float(offset + 45) * 0.005, 0.15) : 0
         navigationController?.navigationBar.layer.shadowOpacity = shadowOpacity
         loginView.setAirmoneyHidden(offset < -45)
+        self.offset = offset
     }
 }
