@@ -11,7 +11,10 @@
 		FA1BB8A029AC0D5F0057C7A4 /* AreaRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */; };
 		FA1BB8AC29AC10D70057C7A4 /* UIViewController+Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */; };
 		FA1BB8B129ACF3810057C7A4 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1BB8B029ACF3810057C7A4 /* Area.swift */; };
+		FA1C32D929AE2F0200C95D69 /* PackageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32D829AE2F0200C95D69 /* PackageRow.swift */; };
+		FA1C32DB29AE2F0C00C95D69 /* PackageRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32DA29AE2F0C00C95D69 /* PackageRowModel.swift */; };
 		FA1C32E029AE33B100C95D69 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32DF29AE33B100C95D69 /* Color+Hex.swift */; };
+		FA1C32E529AEA0FC00C95D69 /* ConfirmationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32E429AEA0FC00C95D69 /* ConfirmationButtonStyle.swift */; };
 		FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14429A9F70B00CE1867 /* AppDelegate.swift */; };
 		FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */; };
 		FA49C14E29A9F70F00CE1867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA49C14D29A9F70F00CE1867 /* Assets.xcassets */; };
@@ -51,7 +54,10 @@
 		FA1BB89F29AC0D5F0057C7A4 /* AreaRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaRowModel.swift; sourceTree = "<group>"; };
 		FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Parent.swift"; sourceTree = "<group>"; };
 		FA1BB8B029ACF3810057C7A4 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		FA1C32D829AE2F0200C95D69 /* PackageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageRow.swift; sourceTree = "<group>"; };
+		FA1C32DA29AE2F0C00C95D69 /* PackageRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageRowModel.swift; sourceTree = "<group>"; };
 		FA1C32DF29AE33B100C95D69 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		FA1C32E429AEA0FC00C95D69 /* ConfirmationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationButtonStyle.swift; sourceTree = "<group>"; };
 		FA49C14129A9F70B00CE1867 /* Airalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA49C14429A9F70B00CE1867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1BB89C29AC0CAA0057C7A4 /* AreaRow */,
+				FA1C32D729AE2EDB00C95D69 /* PackageRow */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -123,6 +130,15 @@
 				FA1BB8AB29AC10D70057C7A4 /* UIViewController+Parent.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA1C32D729AE2EDB00C95D69 /* PackageRow */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C32D829AE2F0200C95D69 /* PackageRow.swift */,
+				FA1C32DA29AE2F0C00C95D69 /* PackageRowModel.swift */,
+			);
+			path = PackageRow;
 			sourceTree = "<group>";
 		};
 		FA49C13829A9F70B00CE1867 = {
@@ -267,6 +283,7 @@
 		FA49C19D29AABF4000CE1867 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FA1C32E429AEA0FC00C95D69 /* ConfirmationButtonStyle.swift */,
 				FA49C19E29AABF5200CE1867 /* NavigationController.swift */,
 			);
 			path = Common;
@@ -405,9 +422,11 @@
 				FA49C17E29AA2F0700CE1867 /* Colors.swift in Sources */,
 				FA49C16929AA18D400CE1867 /* TabBarController.swift in Sources */,
 				FA1BB8AC29AC10D70057C7A4 /* UIViewController+Parent.swift in Sources */,
+				FA1C32D929AE2F0200C95D69 /* PackageRow.swift in Sources */,
 				FA49C18E29AA37C800CE1867 /* Presentable.swift in Sources */,
 				FA49C17929AA261200CE1867 /* Images.swift in Sources */,
 				FA49C19429AA3EC500CE1867 /* CoordinatorFactory.swift in Sources */,
+				FA1C32DB29AE2F0C00C95D69 /* PackageRowModel.swift in Sources */,
 				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
 				FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */,
 				FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */,
@@ -417,6 +436,7 @@
 				FA5F158D29AB5D04005083A1 /* NetworkClientError.swift in Sources */,
 				FA1BB8A029AC0D5F0057C7A4 /* AreaRowModel.swift in Sources */,
 				FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */,
+				FA1C32E529AEA0FC00C95D69 /* ConfirmationButtonStyle.swift in Sources */,
 				FA5F159C29AB6D9A005083A1 /* Package.swift in Sources */,
 				FA5F159029AB631F005083A1 /* CountryService.swift in Sources */,
 				FA49C18629AA31AD00CE1867 /* StoreView.swift in Sources */,
