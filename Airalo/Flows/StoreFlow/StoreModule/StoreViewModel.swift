@@ -22,6 +22,7 @@ class StoreViewModel: StoreModule, ObservableObject {
     @Published var localRowModels: [AreaRowModel] = []
     @Published var regionalRowModels: [AreaRowModel] = []
     @Published var globalRowModels: [PackageRowModel] = []
+    @Published var alert: AlertDetails?
     
     // MARK: - StoreModule properties
     
@@ -65,9 +66,19 @@ class StoreViewModel: StoreModule, ObservableObject {
                     isLoading = false
                 }
             } catch {
-                isLoading = false
-                print(error)
+                await MainActor.run {
+                    isLoading = false
+                    handleError(error)
+                }
             }
+        }
+    }
+    
+    private func handleError(_ error: Error) {
+        if error.localizedDescription.isEmpty {
+            alert = AlertDetails(title: "Oops, something went wrong", message: "Please try again later")
+        } else{
+            alert = AlertDetails(title: "Attention!", message: error.localizedDescription)
         }
     }
 }

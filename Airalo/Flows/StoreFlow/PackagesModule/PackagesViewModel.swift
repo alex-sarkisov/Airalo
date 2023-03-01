@@ -11,8 +11,9 @@ class PackagesViewModel: ObservableObject {
     
     let navigationTitle: String
     
-    @Published private(set) var isLoading: Bool = true
-    @Published private(set) var packageRowModels: [PackageRowModel] = []
+    @Published var isLoading: Bool = true
+    @Published var packageRowModels: [PackageRowModel] = []
+    @Published var alert: AlertDetails?
     
     private let area: Area
     private let areaType: AreaType
@@ -43,8 +44,19 @@ class PackagesViewModel: ObservableObject {
                     isLoading = false
                 }
             } catch {
-                isLoading = false
+                await MainActor.run {
+                    isLoading = false
+                    handleError(error)
+                }
             }
+        }
+    }
+    
+    private func handleError(_ error: Error) {
+        if error.localizedDescription.isEmpty {
+            alert = AlertDetails(title: "Oops, something went wrong", message: "Please try again later")
+        } else{
+            alert = AlertDetails(title: "Attention!", message: error.localizedDescription)
         }
     }
 }

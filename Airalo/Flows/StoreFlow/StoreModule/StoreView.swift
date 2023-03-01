@@ -38,6 +38,9 @@ struct StoreView: View {
         }
         .coordinateSpace(name: OffsetReader.coordinateSpace)
         .onPreferenceChange(OffsetPreferenceKey.self, perform: onOffsetChange)
+        .alert(item: $viewModel.alert) { alert in
+            Alert(title: Text(alert.title), message: Text(alert.message), dismissButton: .cancel())
+        }
     }
 }
 

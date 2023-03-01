@@ -20,6 +20,7 @@
 		FA1C32E529AEA0FC00C95D69 /* ConfirmationButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32E429AEA0FC00C95D69 /* ConfirmationButtonStyle.swift */; };
 		FA1C32EA29AF623300C95D69 /* OffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32E929AF623300C95D69 /* OffsetPreferenceKey.swift */; };
 		FA1C32EC29AF762200C95D69 /* UINavigationBar+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32EB29AF762200C95D69 /* UINavigationBar+Shadow.swift */; };
+		FA1C32F029AF85DF00C95D69 /* AlertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C32EF29AF85DF00C95D69 /* AlertDetails.swift */; };
 		FA49C14529A9F70B00CE1867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14429A9F70B00CE1867 /* AppDelegate.swift */; };
 		FA49C14729A9F70B00CE1867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */; };
 		FA49C14E29A9F70F00CE1867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA49C14D29A9F70F00CE1867 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		FA1C32E429AEA0FC00C95D69 /* ConfirmationButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationButtonStyle.swift; sourceTree = "<group>"; };
 		FA1C32E929AF623300C95D69 /* OffsetPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPreferenceKey.swift; sourceTree = "<group>"; };
 		FA1C32EB29AF762200C95D69 /* UINavigationBar+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Shadow.swift"; sourceTree = "<group>"; };
+		FA1C32EF29AF85DF00C95D69 /* AlertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDetails.swift; sourceTree = "<group>"; };
 		FA49C14129A9F70B00CE1867 /* Airalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA49C14429A9F70B00CE1867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA49C14629A9F70B00CE1867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 		FA5F159129AB63B4005083A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA1C32EF29AF85DF00C95D69 /* AlertDetails.swift */,
 				FA1BB8B029ACF3810057C7A4 /* Area.swift */,
 				FA5F159429AB6441005083A1 /* ImageData.swift */,
 				FA5F159D29AB6EE9005083A1 /* Operator.swift */,
@@ -456,6 +459,7 @@
 				FA5F158029AB580E005083A1 /* NetworkClient.swift in Sources */,
 				FA49C18829AA34E300CE1867 /* StoreFlowModuleFactory.swift in Sources */,
 				FA49C18C29AA37B400CE1867 /* BaseRouter.swift in Sources */,
+				FA1C32F029AF85DF00C95D69 /* AlertDetails.swift in Sources */,
 				FA1BB89E29AC0D460057C7A4 /* AreaRow.swift in Sources */,
 				FA5F157D29AB57F4005083A1 /* ServiceFactory.swift in Sources */,
 				FA49C19F29AABF5200CE1867 /* NavigationController.swift in Sources */,

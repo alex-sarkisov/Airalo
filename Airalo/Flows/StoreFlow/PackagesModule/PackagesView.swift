@@ -21,5 +21,8 @@ struct PackagesView: View {
             .padding(.horizontal, 20)
             .padding(.vertical, 25)
         }
+        .alert(item: $viewModel.alert) { alert in
+            Alert(title: Text(alert.title), message: Text(alert.message), dismissButton: .cancel())
+        }
     }
 }
