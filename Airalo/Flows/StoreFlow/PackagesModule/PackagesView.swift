@@ -14,8 +14,12 @@ struct PackagesView: View {
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 20) {
-                ForEach(viewModel.packageRowModels) { rowModel in
-                    PackageRow(rowModel: rowModel)
+                if viewModel.isLoading {
+                    ProgressView()
+                } else {
+                    ForEach(viewModel.packageRowModels) { rowModel in
+                        PackageRow(rowModel: rowModel)
+                    }
                 }
             }
             .padding(.horizontal, 20)
