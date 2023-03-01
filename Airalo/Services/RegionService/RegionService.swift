@@ -9,8 +9,9 @@ import Foundation
 
 protocol RegionService {
     
-    func obtainRegions() async throws -> [Area]
-    func obtainGlobalPackages() async throws -> Area
+    func obtainRegions() async throws -> [Region]
+    func obtainGlobalPackages() async throws -> Region
+    func obtainRegionPackages(slug: String) async throws -> Region
 }
 
 struct RegionServiceImp: RegionService {
@@ -19,15 +20,21 @@ struct RegionServiceImp: RegionService {
     
     private let decoder = JSONDecoder()
     
-    func obtainRegions() async throws -> [Area] {
+    func obtainRegions() async throws -> [Region] {
         let data = try await networkClient.request(URLs.regions)
-        let regions = try decoder.decode([Area].self, from: data)
+        let regions = try decoder.decode([Region].self, from: data)
         return regions
     }
     
-    func obtainGlobalPackages() async throws -> Area {
+    func obtainGlobalPackages() async throws -> Region {
         let data = try await networkClient.request(URLs.globalPackages)
-        let region = try decoder.decode(Area.self, from: data)
+        let region = try decoder.decode(Region.self, from: data)
+        return region
+    }
+    
+    func obtainRegionPackages(slug: String) async throws -> Region {
+        let data = try await networkClient.request(URLs.regionPackages + slug)
+        let region = try decoder.decode(Region.self, from: data)
         return region
     }
 }
@@ -37,5 +44,6 @@ private extension RegionServiceImp {
     enum URLs {
         static let regions = "https://www.airalo.com/api/v2/regions"
         static let globalPackages = "https://www.airalo.com/api/v2/regions/world"
+        static let regionPackages = "https://www.airalo.com/api/v2/regions/"
     }
 }

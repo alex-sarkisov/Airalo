@@ -8,6 +8,7 @@
 import Foundation
 
 typealias Country = Area
+typealias Region = Area
 
 struct Area: Decodable {
     
