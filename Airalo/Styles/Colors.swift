@@ -16,6 +16,7 @@ private enum ColorNames {
     static let content1 = "Content/content1"
     static let content2 = "Content/content2"
     static let content3 = "Content/content3"
+    static let content4 = "Content/content4"
 }
 
 extension UIColor {
@@ -26,6 +27,7 @@ extension UIColor {
     static var content1: UIColor { UIColor(named: ColorNames.content1)! }
     static var content2: UIColor { UIColor(named: ColorNames.content2)! }
     static var content3: UIColor { UIColor(named: ColorNames.content3)! }
+    static var content4: UIColor { UIColor(named: ColorNames.content4)! }
 }
 
 extension Color {
@@ -36,4 +38,5 @@ extension Color {
     static var content1: Color { Color(ColorNames.content1) }
     static var content2: Color { Color(ColorNames.content2) }
     static var content3: Color { Color(ColorNames.content3) }
+    static var content4: Color { Color(ColorNames.content4) }
 }

@@ -177,7 +177,7 @@ private extension OperatorStyle {
         case .dark:
             return .content1
         case .light:
-            return .content3
+            return .content4
         }
     }
 }

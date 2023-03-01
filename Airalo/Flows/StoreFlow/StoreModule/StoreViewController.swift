@@ -12,6 +12,7 @@ class StoreViewController: UIViewController, ParentViewController {
     
     // MARK: - Private properties
     
+    private let loginView = LoginNavigationView()
     private let viewModel: StoreViewModel
     
     // MARK: - Lifecycle
@@ -48,6 +49,7 @@ class StoreViewController: UIViewController, ParentViewController {
     private func setupNavigationBar() {
         navigationItem.title = "Hello"
         navigationItem.backButtonTitle = ""
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: loginView)
         navigationController?.isNavigationBarHidden = false
         navigationController?.navigationBar.addShadow()
     }
@@ -68,15 +70,14 @@ class StoreViewController: UIViewController, ParentViewController {
     }
     
     private func setupView() {
-        let rootView = StoreView(viewModel: viewModel, onOffsetChange: setupNavigationBarShadow)
+        let rootView = StoreView(viewModel: viewModel, onOffsetChange: setupNavigationBarWithOffset)
         let hostingController = UIHostingController(rootView: rootView)
         addChild(hostingController, to: view)
     }
     
-    private func setupNavigationBarShadow(_ offset: CGFloat) {
-        DispatchQueue.main.async {
-            let shadowOpacity: Float = offset < -45 ? min(-Float(offset + 45) * 0.005, 0.15) : 0
-            self.navigationController?.navigationBar.layer.shadowOpacity = shadowOpacity
-        }
+    private func setupNavigationBarWithOffset(_ offset: CGFloat) {
+        let shadowOpacity: Float = offset < -45 ? min(-Float(offset + 45) * 0.005, 0.15) : 0
+        navigationController?.navigationBar.layer.shadowOpacity = shadowOpacity
+        loginView.setAirmoneyHidden(offset < -45)
     }
 }

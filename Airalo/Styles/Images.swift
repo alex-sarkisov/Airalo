@@ -10,6 +10,7 @@ import Foundation
 enum Images {
     
     enum Common {
+        static let airmoney = "Common/airmoney"
         static let arrowRight = "Common/arrowRight"
         static let back = "Common/back"
     }
