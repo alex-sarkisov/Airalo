@@ -18,3 +18,8 @@ struct Area: Decodable {
     let image: ImageData
     let packages: [Package]?
 }
+
+enum AreaType {
+    case country
+    case region
+}
